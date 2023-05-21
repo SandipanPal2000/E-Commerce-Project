@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">TechCube</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Categories
+              </a>
+              <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="/#products">Cameras</a></li>
+                <li><a class="dropdown-item" href="/#products">Smart Watches</a></li>
+                <li><a class="dropdown-item" href="/#products">Drones</a></li>
+                <li><a class="dropdown-item" href="/#products">Mobile Phones & Tablets</a></li>
+                <li><a class="dropdown-item" href="/#products">Headphones</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/cart.html" tabindex="-1">
+                Cart<i class="bi bi-cart-plus-fill"></i> 
+                <span class="cart-badge badge bg-success">3</span></a>
+            </li>
+          </ul>
+          <ul class="navbar-nav mb-2 mb-lg-0 mx-lg-2 order-sm-last">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="myaccount" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                My Account
+              </a>
+              <ul class="dropdown-menu bg-dark text-light" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="/#" data-bs-toggle="modal" data-bs-target="#exampleModal">My Orders</a></li>
+                <li><a class="dropdown-item" href="/#" data-bs-toggle="modal" data-bs-target="#exampleModal">Profile</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="/#">Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex search-form">
+            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-success" type="submit" data-bs-toggle="tooltip" data-bs-placement="left" title="Search for all products">
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
+         
+        </div>
+      </div>
+    </nav>
+    <!-- End of Navigation -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb p-3">
+        <li class="breadcrumb-item"><a href="/">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Mobile Phones & Tablets</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Apple iPhone 14 128GB (Red)</li>
+      </ol>
+    </nav>
+    <div class="container mb-5">
+        <div class="row d-flex flex-row">
+            <div class="col-md-5 product-image">
+                <img class="img-fluid" src="Pictures/1.jpg" alt="" />
+            </div>
+        
+            <div class="col-md-5">
+                <h6 class="text-uppercase text-secondary">Logitech</h6>
+                <h2 class="fs-3">Logitech G435 Gaming Headphones (Black)</h2>
+                <h5 class="text-secondary fs-6 fw-bold">₹6,449</h5>
+                <div class="text-secondary text-small"><strong>Color:</strong></div>
+                <div class="my-2">
+                  <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                  
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                    <label class="btn btn-dark color-label" for="btnradio3">
+                      <i class="bi bi-check2"></i>
+                    </label>
+                  </div>
+                </div>
+               
+                <button class="btn btn-dark w-50 my-5" onclick="showToast()"><i class="bi bi-cart-plus-fill"></i>
+                    Add to Cart </button>
+                <div>
+                  <span class="text-secondary text-small"><strong>Details:</strong> :</span>
+                  
+                    <div class="accordion accordion-flush" id="accordionExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                Versatile
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Logitech G435 is the first headset with LIGHTSPEED wireless and low latency Bluetooth connectivity, providing more freedom of play on PC, smartphones, Playstation gaming devices
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Lightweight
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                With a lightweight construction, this wireless gaming headset weighs only 5.8 oz (165 g), making it comfortable to wear all day long
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Superior voice quality
+                            </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Be heard loud and clear thanks to the built-in dual beamforming microphones that eliminate the need for a mic arm and reduce background noise
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Immersive sound & Discord Certified
+                              </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                This cool and colorful headset delivers carefully balanced, high-fidelity audio with 40 mm drivers; compatibility with Dolby Atmos, Tempest 3D AudioTech and Windows Sonic for a true surround sound experience
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Long battery life
+                              </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                No need to stop the game to recharge thanks to G435's 18 hours of battery life, allowing you to keep playing, talking to friends, and listening to music all day
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+
+    <div class="footer mt-auto bg-dark text-light">
+      <div class="container py-3">
+          <div class="row d-flex footer-items">
+              <div class="col-lg-4">
+                  <h5>Categories</h5>
+                  <ul>
+                      <li><a href="#">Cameras</a></li>
+                      <li><a href="#">Smart Watches</a></li>
+                      <li><a href="#">Drones</a></li>
+                      <li><a href="#">Mobile Phones & Tablets</a></li>
+                      <li><a href="#">Headphones</a></li>
+                  </ul>
+              </div>
+              <div class="col-lg-4">
+                 <h5>Useful Links</h5>
+                 <ul>
+                     <li><a href="#">Terms</a></li>
+                     <li><a href="#">Privacy</a></li>
+                     <li><a href="#">About us</a></li>
+                 </ul>
+             </div>
+             <div class="col-lg-4">
+                 <h5>Get Updates</h5>
+                 <div class="d-flex subscribe">
+                     <input type="text" class="form-control">
+                     <button class="btn btn-warning">Subscribe</button>
+                 </div>
+                 <div class="mt-2">
+                  <div class="btn-group me-2 social-icons" role="group" aria-label="First group">
+                    <button type="button" class="btn btn-secondary mx-1 d-flex flex-column justify-content-center align-items-center">
+                      <i class="bi bi-facebook"></i>
+                    </button>                 
+                   </div>
+                 </div>
+             </div>
+         </div>
+         <div class="row text-center">
+           <span>Made by Sandipan, Dwaipayan, Dhritimohan & Suman</span>
+         </div>
+      </div>
+   
+  </div>
+  <!-- End of Footer -->
+       <div class="toast d-flex align-items-center text-white bg-primary border-0 position-fixed" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-body">
+          Item is successfully added to your cart.
+        </div>
+        <button type="button" class="btn-close btn-close-white ms-auto me-2" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <!-- End of Toast -->
+      <script src="app.js"></script>
+  </body>
+</html>
